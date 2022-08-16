@@ -243,7 +243,7 @@ function showSuggestions() {
 
     let input = this.value;
     if (input.length <= 2) return;
-    fetch(`http://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${input}`)
+    fetch(`https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${input}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(city => {
@@ -278,7 +278,7 @@ function hideSuggestions() {
 }
 
 function updateWeather() {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=6&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=6&aqi=no&alerts=no`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
