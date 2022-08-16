@@ -186,6 +186,7 @@ body {
 
 .fav-item:hover {
     background-color: rgb(186, 186, 186);
+    border-radius: 10px;
     cursor: pointer;
 }
 
