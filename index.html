@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/50a2ead62d.js" crossorigin="anonymous"></script>
+    <title>Skies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="background">
+    <div class="wrapper">
+        <div class="weather-container">
+            <div class="navbar">
+                <h2>SKIES</h2>
+                <div class="menu-btn">
+                    <i class=" fa fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+
+            <div class="expand-btn">Show more</div>
+
+            <div class="current-weather">
+                <h2 class="degree-value"></h2>
+                <small class="degrees">&#8451</small>
+                <div class="city-date-section">
+                    <h2 class="city"></h2>
+                    <small class="date-time"></small>
+                </div>
+                <div class="icon">
+                    <img class="icon-img" src="" alt="icon">
+                    <small class="desc"></small>
+                </div>
+
+                <button class="fav-btn" data-is-fav='no'>
+                    <i class="fa fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="expand-details">
+                <div class="forecast">
+                    <div class="day day-2">
+                        <div class="day-name">
+                            <h2></h2>
+                        </div>
+                        <div class="temp-details">
+                            <img src="" alt="icon">
+                            <h3 class="max-temp"></h3>
+                            <h4 class="min-temp"></h4>
+                        </div>
+
+                    </div>
+                    <div class="day day-3">
+                        <div class="day-name">
+                            <h2></h2>
+                        </div>
+                        <div class="temp-details">
+                            <img src="" alt="icon">
+                            <h3 class="max-temp"></h3>
+                            <h4 class="min-temp"></h4>
+                        </div>
+                    </div>
+                    <div class="day day-4">
+                        <div class="day-name">
+                            <h2></h2>
+                        </div>
+                        <div class="temp-details">
+                            <img src="" alt="icon">
+                            <h3 class="max-temp"></h3>
+                            <h4 class="min-temp"></h4>
+                        </div>
+                    </div>
+                    <div class="day day-5">
+                        <div class="day-name">
+                            <h2></h2>
+                        </div>
+                        <div class="temp-details">
+                            <img src="" alt="icon">
+                            <h3 class="max-temp"></h3>
+                            <h4 class="min-temp"></h4>
+                        </div>
+                    </div>
+                    <div class="day day-6">
+                        <div class="day-name">
+                            <h2></h2>
+                        </div>
+                        <div class="temp-details">
+                            <img src="" alt="icon">
+                            <h3 class="max-temp"></h3>
+                            <h4 class="min-temp"></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-container">
+                    <div class="details-section">
+                        <h2 class="details">DETAILS</h2>
+                        <div class="info humidity">
+                            <h3 class="humidity-name">Humidity : </h3>
+                            <h3 class="humidity-value"></h3>
+                        </div>
+                        <div class="info windspeed">
+                            <h3 class="windspeed-name">Wind Speed : </h3>
+                            <h3 class="windspeed-value"></h3>
+                        </div>
+                        <div class="info condition">
+                            <h3 class="condition-name">Condition : </h3>
+                            <h3 class="condition-value"></h3>
+                        </div>
+                        <div class="info visibility">
+                            <h3 class="visibility-name">Visibility : </h3>
+                            <h3 class="visibility-value"></h3>
+                        </div>
+                        <div class="info precipitation">
+                            <h3 class="precipitation-name">Precipitation : </h3>
+                            <h3 class="precipitation-value"></h3>
+                        </div>
+                    </div>
+                    <div class="astro-section">
+                        <h2 class="astro">ASTRO</h2>
+                        <div class="info sunrise">
+                            <h3 class="sunrise-name">Sunrise : </h3>
+                            <h3 class="sunrise-value"></h3>
+                        </div>
+                        <div class="info sunset">
+                            <h3 class="sunset-name">Sunset : </h3>
+                            <h3 class="sunset-value"></h3>
+                        </div>
+                        <div class="info moonrise">
+                            <h3 class="moonrise-name">Moonrise : </h3>
+                            <h3 class="moonrise-value"></h3>
+                        </div>
+                        <div class="info moonset">
+                            <h3 class="moonset-name">Moonset : </h3>
+                            <h3 class="moonset-value"></h3>
+                        </div>
+                        <div class="info moonphase">
+                            <h3 class="moonphase-name">Moonphase : </h3>
+                            <h3 class="moonphase-value"></h3>
+                        </div>
+                    </div>
+                    <div class="rain-section">
+                        <h2 class="rain">CHANCE OF</h2>
+                        <img src="./icons/day/308.png" alt="icon">
+                        <h1 class="rain-value"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location...">
+                <button class="back-btn" type="button">
+                    <i class="fas fa-regular fa-arrow-right"></i>
+                </button>
+            </form>
+            <div class="suggestions">
+                <ul class="suggestions-list">
+                </ul>
+            </div>
+            <div class="favourite">
+                <h2>Favourites</h2>
+                <ul class="fav-ul">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </img>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
