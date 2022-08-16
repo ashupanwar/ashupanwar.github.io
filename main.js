@@ -200,11 +200,12 @@ function setForecastBackground(timeOfDay, code, background) {
 
 function firstLoad() {
     let favList = JSON.parse(localStorage.getItem('favList'));
-    if (favList == null) {
-        selectedCity = "New York";
+    if (favList == null || favList.length == 0) {
+        selectedCity = 'New York';
     } else {
         selectedCity = favList[0];
     }
+
     updateWeather();
 }
 
